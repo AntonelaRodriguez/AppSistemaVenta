@@ -13,10 +13,10 @@
 
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>Contraseña</mat-label>
-                    <input [type]="ocultarPAssword ? 'password' : 'text'" formControlName="password" matInput autocomplete="off">
+                    <input [type]="ocultarPassword ? 'password' : 'text'" formControlName="password" matInput autocomplete="off">
                     <button mat-icon-button matSuffix
-                        (click)="ocultarPAssword = !ocultarPAssword" type="button">
-                        <mat-icon matSuffix>{{ocultarPAssword ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        (click)="ocultarPassword = !ocultarPassword" type="button">
+                        <mat-icon matSuffix>{{ocultarPassword ? 'visibility_off' : 'visibility'}}</mat-icon>
                     </button>
                 </mat-form-field>
                 <button class="full-width" mat-raised-button color="accent" type="submit" [disabled]="formularioLogin.invalid">Ingresar

@@ -14,7 +14,7 @@ import { UtilidadService } from 'src/app/Reutilizable/utilidad.service';
 export class LoginComponent implements OnInit {
 
   formularioLogin: FormGroup;
-  ocultarPAssword: boolean = true;
+  ocultarPassword: boolean = true;
   mostrarLoading: boolean = false;
 
   constructor(

@@ -33,6 +33,6 @@ export class UsuarioService {
   }
 
   eliminar(id: number):Observable<ResponseApi>{
-    return this.http.delete<ResponseApi>(`${this.urlApi}Eliminar/${id}`)
+    return this.http.delete<ResponseApi>(`${this.urlApi}Eliminar?id=${id}`)
   }
 }
