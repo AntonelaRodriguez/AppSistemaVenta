@@ -1,4 +1,4 @@
-<h1 style="margin: 20px 0px 0 px 40px;">Productos</h1>
+<h1 style="margin: 20px 0px 0px 40px;">Productos</h1>
 
 <mat-card style="margin: 20px 40px 40px 40px;">
     <mat-card-title>
@@ -19,7 +19,7 @@
             <table mat-table [dataSource]="dataListaProductos">
                 <ng-container matColumnDef="nombre">
                     <th mat-header-cell *matHeaderCellDef>Nombre</th>
-                    <td mat-cell *matCellDef="let element">{{element.nombre}}</td>
+                    <td mat-cell *matCellDef="let element">{{capitalize(element.nombre)}}</td>
                 </ng-container>
 
                 <ng-container matColumnDef="categoria">

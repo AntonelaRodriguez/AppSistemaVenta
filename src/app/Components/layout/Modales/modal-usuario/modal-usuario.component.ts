@@ -56,7 +56,7 @@ export class ModalUsuarioComponent implements OnInit {
     if(this.datosUsuarios != null){
       this.formularioUsuario.patchValue({
         nombreCompleto: this.datosUsuarios.nombreCompleto,
-        correo: this.datosUsuarios.nombreCompleto,
+        correo: this.datosUsuarios.correo,
         idRol: this.datosUsuarios.idRol,
         clave: this.datosUsuarios.clave,
         esActivo: this.datosUsuarios.esActivo
